@@ -2,7 +2,10 @@ package VadymTahiiev;
 
 import VadymTahiiev.data.DataHandler;
 import VadymTahiiev.data.PutToFile;
+import VadymTahiiev.model.Application;
+import VadymTahiiev.model.Protocol;
 import VadymTahiiev.model.Receiver;
+import VadymTahiiev.model.Transmitter;
 import VadymTahiiev.tasks.TopEntityTask;
 import VadymTahiiev.tasks.TopTrafficConsumersTask;
 import VadymTahiiev.utils.ConvertType;
@@ -39,8 +42,18 @@ public class Runner {
                 e.printStackTrace();
             }
         }
-        List<Receiver> l = ConvertType.convertMapToString(topTrafficReceiversTask);
-        PutToFile.putToFile(l, Operation.TOP_RECEIVERS);
+
+        ConvertType convertType = new ConvertType();
+        List<Application> applications = (List<Application>) convertType.convert(topAppTask, Operation.TOP_APP);
+        List<Protocol> protocols = (List<Protocol>) convertType.convert(topProtocolTask, Operation.TOP_PROTOCOLS);
+        List<Receiver> receivers = (List<Receiver>) convertType.convert(topTrafficReceiversTask, Operation.TOP_RECEIVERS);
+        List<Transmitter> transmitters = (List<Transmitter>) convertType.convert(topTrafficTransmittersTask, Operation.TOP_TRANSMITTERS);
+
+        PutToFile putToFile = new PutToFile();
+        putToFile.putToFile(applications, Operation.TOP_APP);
+        putToFile.putToFile(protocols, Operation.TOP_PROTOCOLS);
+        putToFile.putToFile(receivers, Operation.TOP_RECEIVERS);
+        putToFile.putToFile(transmitters, Operation.TOP_TRANSMITTERS);
 
     }
 }

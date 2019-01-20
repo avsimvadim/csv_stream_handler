@@ -1,6 +1,6 @@
 package VadymTahiiev.model;
 
-public class Transmitter {
+public class Transmitter implements Model {
     public String transmitter;
     public Long bytes;
 

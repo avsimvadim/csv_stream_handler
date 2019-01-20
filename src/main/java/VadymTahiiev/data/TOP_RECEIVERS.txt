@@ -1,2 +1,10 @@
 {"receiver":"ns.inside.local","bytes":237078267108}
 {"receiver":"mail.c2.local_111.16.2.2","bytes":741274672}
+{"receiver":"ops.inside.local","bytes":643129440}
+{"receiver":"web.server.local","bytes":386544058}
+{"receiver":"d3.inside.local","bytes":374705120}
+{"receiver":"111.16.126.6","bytes":362372446}
+{"receiver":"bay.inside.local","bytes":253918992}
+{"receiver":"top.inside.local","bytes":103127960}
+{"receiver":"192.168.3.11","bytes":37359168}
+{"receiver":"store.c2.local_111.16.2.22","bytes":23488230}

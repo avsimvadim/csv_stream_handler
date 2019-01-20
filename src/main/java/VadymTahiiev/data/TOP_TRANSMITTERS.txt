@@ -1,0 +1,10 @@
+{"transmitter":"ns.inside.local","bytes":63414727474}
+{"transmitter":"router.c2.local_111.16.2.11","bytes":1935488106}
+{"transmitter":"g1.inside.local_192.168.1.1","bytes":2803674}
+{"transmitter":"R_111.22.22.102","bytes":434584}
+{"transmitter":"WIFI_192.168.1.111","bytes":282506}
+{"transmitter":"WIFI_192.168.1.222","bytes":190162}
+{"transmitter":"work.inside.local","bytes":87340}
+{"transmitter":"CENTOS_FTP_111.22.22.106","bytes":1206}
+{"transmitter":"ospf-all.mcast.net","bytes":0}
+{"transmitter":"255.255.255.255","bytes":0}

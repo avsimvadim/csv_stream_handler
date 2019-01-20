@@ -1,6 +1,6 @@
 package VadymTahiiev.model;
 
-public class Receiver {
+public class Receiver implements Model {
     public String receiver;
     public Long bytes;
 

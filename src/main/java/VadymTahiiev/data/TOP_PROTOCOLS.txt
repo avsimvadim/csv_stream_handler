@@ -1,0 +1,5 @@
+{"protocol":"6","bytes":151810596872}
+{"protocol":"17","bytes":870341618}
+{"protocol":"89","bytes":6722696}
+{"protocol":"1","bytes":329968}
+{"protocol":"2","bytes":392}

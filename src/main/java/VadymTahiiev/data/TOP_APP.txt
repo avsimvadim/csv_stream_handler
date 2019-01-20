@@ -1,0 +1,10 @@
+{"application":"Xml-Ipc Server Reg","bytes":151583644230}
+{"application":"Connected Corp","bytes":683868000}
+{"application":"iXYZI","bytes":212970866}
+{"application":"SNMP","bytes":181014243}
+{"application":"Sun Proxy Admin Service","bytes":12070936}
+{"application":"SSDP","bytes":3820332}
+{"application":"The Secure Shell (SSH) Protocol","bytes":1764701}
+{"application":"Bootstrap Protocol Server","bytes":781944}
+{"application":"SNS Quote","bytes":516080}
+{"application":"Remote Replication Agent Connection","bytes":236334}
