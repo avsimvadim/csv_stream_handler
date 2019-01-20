@@ -1,0 +1,2 @@
+{"receiver":"ns.inside.local","bytes":237078267108}
+{"receiver":"mail.c2.local_111.16.2.2","bytes":741274672}

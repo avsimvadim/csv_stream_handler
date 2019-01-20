@@ -4,8 +4,10 @@ import VadymTahiiev.listing_data.TopStreams;
 import VadymTahiiev.utils.Stream;
 
 import java.util.List;
+import java.util.Map;
 
 public class TopTrafficConsumersTask implements Runnable{
+    private Map<String, Long> task;
     private List<List<String>> data;
     private Stream streamType;
     private int topNumber;
@@ -18,6 +20,10 @@ public class TopTrafficConsumersTask implements Runnable{
 
     @Override
     public void run(){
-        new TopStreams().getTopStreams(data, streamType, topNumber);
+        task = new TopStreams().getTopStreams(data, streamType, topNumber);
+    }
+
+    public Map<String, Long> getTask(){
+        return task;
     }
 }

@@ -1,16 +1,18 @@
 package VadymTahiiev;
 
-import VadymTahiiev.dao.DataHandler;
-import VadymTahiiev.listing_data.TopStreams;
+import VadymTahiiev.data.DataHandler;
+import VadymTahiiev.data.PutToFile;
+import VadymTahiiev.model.Receiver;
 import VadymTahiiev.tasks.TopEntityTask;
 import VadymTahiiev.tasks.TopTrafficConsumersTask;
+import VadymTahiiev.utils.ConvertType;
 import VadymTahiiev.utils.Entity;
+import VadymTahiiev.utils.Operation;
 import VadymTahiiev.utils.Stream;
 
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 
@@ -37,6 +39,8 @@ public class Runner {
                 e.printStackTrace();
             }
         }
+        List<Receiver> l = ConvertType.convertMapToString(topTrafficReceiversTask);
+        PutToFile.putToFile(l, Operation.TOP_RECEIVERS);
 
     }
 }

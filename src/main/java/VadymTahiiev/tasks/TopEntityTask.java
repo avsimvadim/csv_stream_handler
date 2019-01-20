@@ -9,18 +9,18 @@ import java.util.Map;
 public class TopEntityTask implements Runnable{
     private Map<String, Long> task;
     private List<List<String>> data;
-    private Entity entity;
+    private Entity entityType;
     private int topNumber;
 
-    public TopEntityTask(List<List<String>> data, Entity entity, int topNumber) {
+    public TopEntityTask(List<List<String>> data, Entity entityType, int topNumber) {
         this.data = data;
-        this.entity = entity;
+        this.entityType = entityType;
         this.topNumber = topNumber;
     }
 
     @Override
     public void run(){
-        task = new TopEntity().findTopUsedEntity(data, entity, topNumber);
+        task = new TopEntity().findTopUsedEntity(data, entityType, topNumber);
     }
 
     public Map<String, Long> getTask(){

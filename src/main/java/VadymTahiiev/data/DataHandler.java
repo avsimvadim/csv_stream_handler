@@ -1,4 +1,4 @@
-package VadymTahiiev.dao;
+package VadymTahiiev.data;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
